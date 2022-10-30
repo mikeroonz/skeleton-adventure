@@ -49,15 +49,18 @@ Python will stop with an exception.
 This line is there so that 'adventure' can be imported as a module for unit testing
 and exploring via REPL.
 
-`>python adventure.py`
+`>python adventure.py
+`
 	runs the adventure game
 
 `>python
 Python 3.(something)...
 >>>from adventure import *`
+
 	runs the adventure.py file but since the __name__ is not "__main__" when
 	you do this, the program will stop after setting up the rooms.
 	Now you can try out python commands on the rooms data structure:
+
 `>>>print(rooms["Foyer"]["exits"])
 {'N': 'Dining Room', 'E': 'East wing'}
 >>>print(rooms["Foyer"]["exits"].count())`
