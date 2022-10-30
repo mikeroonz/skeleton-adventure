@@ -10,6 +10,8 @@ and is initially easy to understand.  At some point in adding features, it becom
 overall to make more sophistocated use of data structures and make the code more 
 general purpose with differences in behaviour controlled by the data.
 
+Heavy use of the Python built-in dictionary type.  See https://docs.python.org/3/tutorial/datastructures.html#dictionaries.
+
 Only the dict rooms and the starting value for current_room and end_room need be changed to
 handle a completely different group of rooms, direction mapping and items.
 The 18 lines of "game loop" would remain the same.
