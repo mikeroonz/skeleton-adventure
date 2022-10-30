@@ -14,7 +14,9 @@ Heavy use of the Python built-in dictionary type.  See https://docs.python.org/3
 
 Only the dict rooms and the starting value for current_room and end_room need be changed to
 handle a completely different group of rooms, direction mapping and items.
-The 19 lines of "game loop" would remain the same.
+The 19 lines of the "game loop" would remain the same.  The "game loop" is contained
+within the `if __name__ == "__main__":` block and continues to run until the player
+reaches the end_room or uses the 'Q' command to quit.
 
 The rooms data structure is a dict that contains dicts and lists.  Here's the structure
 with keys and values labelled and their data types indicated.
@@ -77,6 +79,8 @@ Now you can try out python commands on the rooms data structure:
 
 ### New room, new item
 
+Both these changes can be done by just adding to the 'rooms' dict.  No change to 
+the 'game loop' is needed.
 Add a new room, a kitchen to the north of the dining room.  Test that this works by
 running the code and going 'N' from the dining room - you should be in the kitchen.
 Now go 'S' from the kitchen and you should be back in the dining room.
@@ -100,7 +104,7 @@ Add item handling
 	OK the lantern lights up the Foyer, you can now see another exit to the West
 
 Now the dict for the rooms info needs to be changed to include another exit from the Foyer.
-This will require adding code.
+This will require adding code to the 'game loop'.
 
 ### Expert - items interact with the environment
 
