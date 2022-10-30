@@ -55,6 +55,7 @@ runs the adventure game
 
 	>python
 	Python 3.(something)...
+	Type "help", "copyright", "credits" or "license" for more information.
 	>>>from adventure import *`
 
 runs the adventure.py file but since the __name__ is not "__main__" when
@@ -63,7 +64,8 @@ Now you can try out python commands on the rooms data structure:
 
 	>>>print(rooms["Foyer"]["exits"])
 	{'N': 'Dining Room', 'E': 'East wing'}
-	>>>print(rooms["Foyer"]["exits"].count())
+	>>>print(rooms["Foyer"]["exits"].keys())
+	dict_keys(['N', 'E'])	
 
 
 ## Suggestions for extension
