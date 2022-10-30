@@ -78,8 +78,8 @@ Add a new item 'EggWhisk' to appear in the kitchen.
 
 ### Advanced - item handling
 
-
 Add item handling
+
 	>get lantern
 	OK you now have : lantern
 
@@ -94,3 +94,10 @@ Add item handling
 
 Now the dict for the rooms info needs to be changed to include another exit from the Foyer.
 This will require adding code.
+
+### Expert - items interact with the environment
+
+Add key items and a locked door.  The player must collect the key from one room, take it
+to the locked door and unlock it.  Make sure the door can only be unlocked if the player
+has the key.
+
