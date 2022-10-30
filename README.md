@@ -17,15 +17,18 @@ The 18 lines of "game loop" would remain the same.
 The rooms data structure is a dict that contains dicts and lists.  Here's the structure
 with keys and values labelled and their data types indicated.
 
-rooms <dict> = {
-    room_name <key/string>: <value/dict> {
-	exits <key/string>: <value/dict> {
-    	    direction <key/string> : destination <value/string> },
-	items <key/string>: <value/list> ( item <string>, item <string> ) }
-	}
+	rooms <dict> = {
+		room_name <key/string>: <value/dict> {
+			exits <key/string>: <value/dict> { direction <key/string> : destination <value/string>, ... },
+			items <key/string>: <value/list> ( item <string>, ... ) 
+			}, ...
+		}
 
 Note that the difference in "exits" haing a dict value and "items" having a list value
 is why the exits are enclosed in '{}' characters and the items are in '()' characters.
+Exit directions needed to be mapped to the destination room, that's why the key "exits"
+has a dict value.  Items don't need mapping to anything, so the "items" key has a list
+value.
 
 The dict has a key for every room.  For every room, there is a value that's a dict 
 of the information for that room.  The keys in that dict are "exits" and "items".
