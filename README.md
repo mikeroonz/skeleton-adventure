@@ -14,7 +14,7 @@ Heavy use of the Python built-in dictionary type.  See https://docs.python.org/3
 
 Only the dict rooms and the starting value for current_room and end_room need be changed to
 handle a completely different group of rooms, direction mapping and items.
-The 18 lines of "game loop" would remain the same.
+The 19 lines of "game loop" would remain the same.
 
 The rooms data structure is a dict that contains dicts and lists.  Here's the structure
 with keys and values labelled and their data types indicated.
