@@ -1,7 +1,6 @@
 # Skeleton-adventure
 
-An intentionally simple and extensible example of a text adventure.
-Also intended to show how complexity can be moved out of code and into data structures.
+A simple and extensible example of a text adventure.  Shows how complexity can be moved out of code and into data structures.
 
 ## Code walkthrough
 
