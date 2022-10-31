@@ -47,12 +47,16 @@ If there are no items in the room, the key just isn't there.
 For the room "East Wing", there are no items, so there's no key for items in the dict.
 Before the list of items is printed, first check that there are items, otherwise
 Python will stop with an exception.
+
 	...
 	if "items" in rooms[current_room],keys():
 		...
 
+Interactive debugging:
+
 	if __name__ == "__main__":
 		...
+
 This line is there so that 'adventure' can be imported as a module for unit testing
 and exploring via REPL.
 
