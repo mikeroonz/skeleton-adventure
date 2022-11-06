@@ -4,12 +4,13 @@ A simple and extensible example of a text adventure.  Shows how complexity can b
 
 ## Code walkthrough
 
-It's quite common for beginners to write a lot of if-then-else code, which does work
+It's common for beginners to write a lot of if-then-else code, which does work
 and is initially easy to understand.  At some point in adding features, it becomes simpler
-overall to make more sophistocated use of data structures and make the code more 
-general purpose with differences in behaviour controlled by the data.
+overall to make more sophistocated use of data structures with more general purpose 
+code where differences in behaviour are controlled by the data.
 
-Heavy use of the Python built-in dictionary type.  See https://docs.python.org/3/tutorial/datastructures.html#dictionaries.
+This example makes heavy use of the Python built-in dictionary type, nesting a dictonary within a dictionary.
+See https://docs.python.org/3/tutorial/datastructures.html#dictionaries.
 
 Only the dict rooms and the starting value for current_room and end_room need be changed to
 handle a completely different group of rooms, direction mapping and items.
@@ -23,12 +24,12 @@ with keys and values labelled and their data types indicated.
 	rooms <dict> = {
 		room_name <key/string>: <value/dict> {
 			exits <key/string>: <value/dict> { direction <key/string> : destination <value/string>, ... },
-			items <key/string>: <value/list> ( item <string>, ... ) 
+			items <key/string>: <value/list> [ item <string>, ... ] 
 			}, ...
 		}
 
 Note that the difference in "exits" haing a dict value and "items" having a list value
-is why the exits are enclosed in '{}' characters and the items are in '()' characters.
+is why the exits are enclosed in '{}' characters and the items are in '[]' characters.
 Exit directions needed to be mapped to the destination room, that's why the key "exits"
 has a dict value.  Items don't need mapping to anything, so the "items" key has a list
 value.

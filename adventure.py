@@ -3,11 +3,11 @@
 rooms = {
         "Foyer": {
             "exits": {"N": "Dining Room", "E": "East Wing"},
-            "items": ("lantern", "match")
+            "items": ["lantern", "match"]
             },
         "Dining Room": {
             "exits": {"S": "Foyer"},
-            "items": ("knife")
+            "items": ["knife"]
             },
         "East Wing": {
             "exits": {"W": "Foyer"},
