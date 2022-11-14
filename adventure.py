@@ -22,9 +22,7 @@ if __name__ == "__main__":
     while current_room != end_room:
         print()
         print("you are in ",current_room)
-
-        if "exits" in rooms[current_room].keys():
-            print("exits are ",list(rooms[current_room]["exits"].keys()))
+        print("exits are ",list(rooms[current_room]["exits"].keys()))
 
         if "items" in rooms[current_room].keys():
             print("items here are ",rooms[current_room]["items"])
@@ -36,8 +34,6 @@ if __name__ == "__main__":
             
         if user_command in rooms[current_room]["exits"].keys():
             current_room = rooms[current_room]["exits"][user_command]
-        elif user_command == "Q":
-            exit()
         else:
             print("you cannot go that way")
 
